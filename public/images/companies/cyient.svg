@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  <path d="M100 50 L145 76 V128 L100 154 L55 128 V76 Z" fill="none" stroke="#007788" stroke-width="10"/>
+  <circle cx="100" cy="102" r="18" fill="#E35205"/>
+  <text x="100" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#003B46" text-anchor="middle" letter-spacing="2">CYIENT</text>
+</svg>

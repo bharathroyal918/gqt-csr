@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  <path d="M70 55 L130 55 L95 105 L135 105 L65 155 L85 100 L55 100 Z" fill="#D31245"/>
+  <text x="100" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#202A44" text-anchor="middle" letter-spacing="2">SUBEX</text>
+</svg>

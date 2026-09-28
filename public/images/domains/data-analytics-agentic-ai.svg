@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="pb-g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E07A"/>
+      <stop offset="100%" stop-color="#DDA006"/>
+    </linearGradient>
+    <linearGradient id="pb-g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAA812"/>
+      <stop offset="100%" stop-color="#C58504"/>
+    </linearGradient>
+    <linearGradient id="pb-g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D38F06"/>
+      <stop offset="100%" stop-color="#9E6200"/>
+    </linearGradient>
+  </defs>
+  <!-- Bar 1 (Short) -->
+  <rect x="22" y="58" width="22" height="52" rx="4" fill="url(#pb-g1)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.15))"/>
+  <!-- Bar 2 (Medium) -->
+  <rect x="53" y="38" width="22" height="72" rx="4" fill="url(#pb-g2)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.15))"/>
+  <!-- Bar 3 (Tall) -->
+  <rect x="84" y="18" width="22" height="92" rx="4" fill="url(#pb-g3)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.15))"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  <path d="M45 135 V65 L75 105 L100 75 L125 105 L155 65 V135 H138 V95 L125 112 L100 82 L75 112 L62 95 V135 Z" fill="#004C97"/>
+  <text x="100" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#004C97" text-anchor="middle" letter-spacing="4">Micron</text>
+</svg>

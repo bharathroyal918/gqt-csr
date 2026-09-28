@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  <circle cx="100" cy="85" r="45" fill="#E2231A"/>
+  <path d="M85 65 H108 C118 65, 122 70, 122 76 C122 81, 118 84, 112 85 C119 86, 124 90, 124 96 C124 103, 118 107, 107 107 H85 Z M97 73 V82 H106 C110 82, 113 80, 113 77 C113 74, 110 73, 106 73 Z M97 89 V99 H107 C112 99, 115 97, 115 94 C115 91, 112 89, 107 89 Z" fill="#FFFFFF"/>
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" fill="#1C2D42" text-anchor="middle" letter-spacing="2">birlasoft</text>
+</svg>

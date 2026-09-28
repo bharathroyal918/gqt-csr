@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="sn-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81B5A1"/>
+      <stop offset="100%" stop-color="#293E40"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="54" fill="#293E40"/>
+  <!-- ServiceNow curved crest icon -->
+  <path d="M64 26 C43.013 26 26 43.013 26 64 C26 77.25 32.784 88.914 43.125 95.734 L50.8 84.1 C43.7 79.5 39 71.6 39 62.6 C39 48.8 50.2 37.6 64 37.6 C77.8 37.6 89 48.8 89 62.6 C89 71.6 84.3 79.5 77.2 84.1 L84.875 95.734 C95.216 88.914 102 77.25 102 64 C102 43.013 84.987 26 64 26 Z" fill="#81B5A1"/>
+  <circle cx="64" cy="63" r="14" fill="#FFFFFF"/>
+</svg>

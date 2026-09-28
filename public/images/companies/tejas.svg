@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  <path d="M45 100 C 65 60, 135 60, 155 100" fill="none" stroke="#0066B3" stroke-width="12" stroke-linecap="round"/>
+  <path d="M60 115 C 75 85, 125 85, 140 115" fill="none" stroke="#78BE20" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="100" cy="76" r="10" fill="#0066B3"/>
+  <text x="100" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#0066B3" text-anchor="middle" letter-spacing="1.5">TEJAS</text>
+  <text x="100" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#78BE20" text-anchor="middle" letter-spacing="3">NETWORKS</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#0B4F6C"/>
+  <path d="M60 70 H140 V82 H107 V135 H93 V82 H60 Z" fill="#FFFFFF"/>
+  <path d="M100 45 L115 65 H85 Z" fill="#00A896"/>
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">TATA ELXSI</text>
+</svg>

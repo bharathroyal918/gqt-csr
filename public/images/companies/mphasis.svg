@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  <path d="M50 130 V70 L85 105 L120 70 L150 100 V130 H135 V105 L120 90 L85 125 L65 105 V130 Z" fill="#1C2541"/>
+  <circle cx="150" cy="65" r="12" fill="#E6004C"/>
+  <text x="100" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#1C2541" text-anchor="middle" letter-spacing="2">Mphasis</text>
+</svg>

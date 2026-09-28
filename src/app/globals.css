@@ -1,26 +1,151 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --gqt-primary: #005BBB;
+    --gqt-primary-dark: #001B4D;
+    --gqt-royal-blue: #007BFF;
+    --gqt-accent-cyan: #14B8FF;
+    --gqt-surface-light: #EAF4FF;
+    --gqt-bg-light: #F7FAFC;
+    --gqt-border: #E2E8F0;
+    --gqt-text-primary: #0F172A;
+    --gqt-text-secondary: #475569;
+    --gqt-success: #10B981;
+    --gqt-warning: #F59E0B;
+    --gqt-danger: #EF4444;
+    --gqt-purple: #7C3AED;
+  }
+
+  .dark {
+    --gqt-bg-light: #070D1E;
+    --gqt-text-primary: #F8FAFC;
+    --gqt-text-secondary: #94A3B8;
+    --gqt-border: #1E293B;
+    --gqt-surface-light: #111C3A;
+  }
+
+  body {
+    background-color: #F7FAFC;
+    color: #0F172A;
+  }
+
+  .dark body,
+  html.dark body {
+    background-color: #070D1E;
+    color: #F8FAFC;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom GQT Card Tokens with safe defaults & zero-specificity fallback */
+:where(.gqt-card) {
+  border-radius: 24px;
+  background-color: #ffffff;
+  color: #0F172A;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px -2px rgba(0, 91, 187, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:where(.dark .gqt-card, html.dark .gqt-card) {
+  background-color: #111C3A;
+  color: #F8FAFC;
+  border-color: #1E2D52;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.45);
+}
+
+.gqt-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -4px rgba(0, 91, 187, 0.14), 0 4px 12px -2px rgba(0, 0, 0, 0.06);
+  border-color: #93C5FD;
+}
+
+.dark .gqt-card-hover:hover,
+html.dark .gqt-card-hover:hover {
+  border-color: #007BFF;
+  box-shadow: 0 12px 30px -4px rgba(0, 91, 187, 0.35);
+}
+
+.gqt-glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  color: #0F172A;
+}
+
+.dark .gqt-glass,
+html.dark .gqt-glass {
+  background: rgba(11, 19, 43, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(30, 45, 82, 0.8);
+  color: #F8FAFC;
+}
+
+.gqt-gradient-primary {
+  background: linear-gradient(135deg, #007BFF 0%, #005BBB 100%);
+  color: #FFFFFF;
+}
+
+.gqt-gradient-navy {
+  background: linear-gradient(135deg, #001B4D 0%, #003087 100%);
+  color: #FFFFFF;
+}
+
+.gqt-gradient-cyan {
+  background: linear-gradient(135deg, #14B8FF 0%, #007BFF 100%);
+  color: #FFFFFF;
+}
+
+.gqt-gradient-purple {
+  background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+  color: #FFFFFF;
+}
+
+.gqt-gradient-subtle {
+  background: linear-gradient(180deg, #F0F7FF 0%, #FFFFFF 100%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb,
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print Optimization for Offer Letters & Hall Tickets */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-break-inside {
+    break-inside: avoid;
+  }
 }

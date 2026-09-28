@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#0B5ED7"/>
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+  <path d="M100 50 L100 150 M50 100 L150 100" stroke="#FFFFFF" stroke-width="6" opacity="0.4"/>
+  <circle cx="100" cy="100" r="30" fill="#FFFFFF"/>
+  <text x="100" y="109" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#0B5ED7" text-anchor="middle">GQT</text>
+  <text x="100" y="184" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">GLOBAL QUEST</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  <path d="M100 45 L145 130 H115 L100 100 L85 130 H55 Z" fill="#000000"/>
+  <circle cx="100" cy="85" r="8" fill="#13EBA2"/>
+  <text x="100" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="4">ATHER</text>
+</svg>
