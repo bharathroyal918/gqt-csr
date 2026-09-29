@@ -1,0 +1,64 @@
+
+services:
+  # Database Service (PostgreSQL)
+  database:
+    image: postgres:15-alpine
+    container_name: gqt_csr_database
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-gqt_csr_db}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgrespassword}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/migrations:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+  # Backend Service (Django REST Framework)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: gqt_csr_backend
+    command: python manage.py runserver 0.0.0.0:8000
+    environment:
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-django-insecure-dev-secret-key-change-in-prod}
+      DJANGO_DEBUG: ${DJANGO_DEBUG:-"True"}
+      DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS:-"*"}
+      DB_ENGINE: django.db.backends.postgresql
+      DB_NAME: ${POSTGRES_DB:-gqt_csr_db}
+      DB_USER: ${POSTGRES_USER:-postgres}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-postgrespassword}
+      DB_HOST: database
+      DB_PORT: 5432
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - database
+    restart: unless-stopped
+
+  # Frontend Service (Next.js / React)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: gqt_csr_frontend
+    command: npm run dev
+    environment:
+      DJANGO_BACKEND_URL: http://backend:8000
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      HOSTNAME: "0.0.0.0"
+    ports:
+      - "3001:3000"   # Use 3001 on host to avoid conflict with local dev server on 3000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:
