@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { NotificationDispatchSchema } from "@/lib/validation/schemas";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: Request) {
   try {
     const json = await req.json();
