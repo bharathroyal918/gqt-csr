@@ -10,7 +10,7 @@
     "dev": "npm --prefix frontend run dev",
     "dev:frontend": "npm --prefix frontend run dev",
     "dev:backend": "python backend/manage.py runserver 8000",
-    "build": "npm --prefix frontend run build",
+    "build": "npm --prefix frontend run build && node scripts/sync_build.js",
     "build:frontend": "npm --prefix frontend run build",
     "typecheck": "npm --prefix frontend run typecheck",
     "lint": "npm --prefix frontend run lint",

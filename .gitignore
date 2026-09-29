@@ -10,6 +10,7 @@ node_modules/
 /out/
 */out/
 /build/
+/public/
 *.tsbuildinfo
 next-env.d.ts
 
