@@ -102,20 +102,20 @@ export default function HomePage() {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 mb-6 shadow-xs">
           <Sparkles className="w-4 h-4 text-[#005BBB] dark:text-[#14B8FF] animate-pulse" />
           <span className="text-xs font-bold text-[#005BBB] dark:text-[#14B8FF] uppercase tracking-wider">
-            Production-Grade Enterprise CSR Automation Platform
+            NEXT-GEN CAMPUS HIRING PLATFORM
           </span>
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-extrabold text-[#0F172A] dark:text-white tracking-tight leading-tight">
-          Accelerating Campus CSR Drives for{" "}
+          Transform Campus Talent Into Career Opportunities
+          Driven by{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#007BFF] via-[#005BBB] to-[#14B8FF]">
             Global Quest Technologies
           </span>
         </h1>
 
         <p className="mt-6 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-          From college onboarding and CRM communication to proctored anti-cheating exams,
-          instant auto-evaluation, HR Kanban pipelines, and verifiable offer letter issuance.
+          One connected platform to onboard colleges, assess students, automate evaluation, and streamline the journey from campus to placement.
         </p>
 
         {/* Primary Action CTAs */}
